@@ -20,7 +20,7 @@ def generate_twobytes():
     # get the value of the 0-7th bits of steering angle
     byte_1 = steering_angle & 255
 
-    # put the 8th bit value of steering angle to 7th bit of vehicle sppe
+    # put the 8th bit value of steering angle to 7th bit of vehicle speed
     if steering_angle_signature == 0:
         byte_2 = vehicle_speed
     if steering_angle_signature == 256:
@@ -28,9 +28,11 @@ def generate_twobytes():
 
     # convert decimal value to hex value
     two_byte_hex = hex(256 * byte_1 + byte_2)
-    return two_byte_hex
+    return (steering_angle, vehicle_speed, two_byte_hex)
 
 
 if __name__ == '__main__':
-    twobytes = generate_twobytes()
-    print(twobytes)
+    steering_angle_read, vehicle_speed_read, twobytes = generate_twobytes()
+    print("the steering angle is {}".format(steering_angle_read), end='\n')
+    print("the vechicle speed is {}".format(vehicle_speed_read), end='\n')
+    print("the data will store as {}".format(twobytes))
