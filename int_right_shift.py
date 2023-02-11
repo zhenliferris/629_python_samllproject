@@ -21,14 +21,14 @@ def int_right_shift():
                 "{} is not an integer. The right shift can't be processed.".format(user_enter))
 
     if number == 0:
-        print("you input is: {} the right shift is not processed.".format(number))
+        print("You input is: {} the right shift is not processed.".format(number))
     elif number > 0:
-        print("you input is: {} the right shift is processing:".format(number))
+        print("You input is: {} the right shift is processing:".format(number))
         while number != 0:
             number //= 10  # right shift processing
             print(number)
     else:
-        print("you input is: {} the right shift is processing:".format(number))
+        print("You input is: {} the right shift is processing:".format(number))
         number *= -1  # get absolute value from the negative integer
         while number != 0:
             number //= 10
@@ -36,4 +36,5 @@ def int_right_shift():
 
 
 if __name__ == '__main__':
+    #Call the int_right_shift method
     int_right_shift()
