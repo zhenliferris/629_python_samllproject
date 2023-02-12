@@ -5,7 +5,6 @@ a. read an integer number from the user. isinstance(x, int)
     1/10 = 0  
 b. repeat the following until the number is 0.
 c. shift it to the right and print it."""
-10, 000, 000, 000
 
 
 def int_right_shift():
@@ -36,5 +35,5 @@ def int_right_shift():
 
 
 if __name__ == '__main__':
-    #Call the int_right_shift method
+    # Call the int_right_shift method
     int_right_shift()
