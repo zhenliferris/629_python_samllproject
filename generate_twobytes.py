@@ -33,9 +33,6 @@ def generate_twobytes():
 
 if __name__ == '__main__':
     steering_angle_read, vehicle_speed_read, twobytes = generate_twobytes()
-    if(steering_angle_read > 360):
-        print("Steering angle is too large")
-    else:
-        print("The steering angle is {}.".format(steering_angle_read), end='\n')
-        print("The vehicle speed is {}.".format(vehicle_speed_read), end='\n')
-        print("The data will store as {}.".format(twobytes))
+    print("The steering angle is {}.".format(steering_angle_read), end='\n')
+    print("The vehicle speed is {}.".format(vehicle_speed_read), end='\n')
+    print("The data will store as {}.".format(twobytes))
