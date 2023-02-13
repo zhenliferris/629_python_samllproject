@@ -37,5 +37,5 @@ if __name__ == '__main__':
         print("Steering angle is too large")
     else:
         print("The steering angle is {}.".format(steering_angle_read), end='\n')
-    print("The vechicle speed is {}.".format(vehicle_speed_read), end='\n')
-    print("The data will store as {}.".format(twobytes))
+        print("The vehicle speed is {}.".format(vehicle_speed_read), end='\n')
+        print("The data will store as {}.".format(twobytes))
