@@ -37,3 +37,4 @@ def int_right_shift():
 if __name__ == '__main__':
     # Call the int_right_shift method
     int_right_shift()
+    print(f"\nProgram Completed")
