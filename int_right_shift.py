@@ -24,13 +24,13 @@ def int_right_shift():
     elif number > 0:
         print("You input is: {} the right shift is processing:".format(number))
         while number != 0:
-            number //= 10  # right shift processing
+            number >>= 1  # right shift processing
             print(number)
     else:
         print("You input is: {} the right shift is processing:".format(number))
         number *= -1  # get absolute value from the negative integer
         while number != 0:
-            number //= 10
+            number >>= 1
             print(-1*number)  # reflecting the negative value
 
 
