@@ -33,6 +33,6 @@ def generate_twobytes():
 
 if __name__ == '__main__':
     steering_angle_read, vehicle_speed_read, twobytes = generate_twobytes()
-    print("The steering angle is {}.".format(steering_angle_read), end='\n')
-    print("The vehicle speed is {}.".format(vehicle_speed_read), end='\n')
+    print("The steering angle is {}, which is randomly generated.".format(steering_angle_read), end='\n')
+    print("The vehicle speed is {}, which is randomly generated.".format(vehicle_speed_read), end='\n')
     print("The data will store as {}.".format(twobytes))
